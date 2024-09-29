@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create Campaign</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='create_campaign.css') }}">
+</head>
+<body>
+    <h2>Create Phishing Campaign</h2>
+    <div class="container">
+        <form method="POST">
+            <input type="text" name="name" placeholder="Campaign Name" required><br><br>
+            <!-- <input type="text" name="template" placeholder="Email Template" required><br><br> -->
+            <input type="text" name="target_group" placeholder="Target Group" required><br><br>
+            <input type="text" name="subject" placeholder="Email Subject" required><br><br>
+            <textarea name="email_body" placeholder="Email Body" rows="10" cols="50" required></textarea><br><br>
+            <button type="submit">Create</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+</head>
+<body>
+    <div class="container">
+    <h2>Welcome {{ session.username }}</h2>
+    {% if session.role == 'admin' %}
+        <a href="/create_campaign">Create Campaign</a><br>
+        <a href="/report">View Report</a>
+    {% endif %}
+    <a href="/logout">Logout</a>
+</div>
+</body>
+</html>

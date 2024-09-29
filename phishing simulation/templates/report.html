@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Campaign Report</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='report.css') }}">
+</head>
+<body>
+    <h2>Campaign Report</h2>
+    <div class="container">
+    <table border="1">
+        <tr>
+            <th>User ID</th>
+            <th>Campaign ID</th>
+            <th>Clicked</th>
+        </tr>
+        {% for result in results %}
+        <tr>
+            <td>{{ result[1] }}</td>
+            <td>{{ result[2] }}</td>
+            <td>{{ result[3] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+</body>
+</html>
