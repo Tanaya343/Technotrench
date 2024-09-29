@@ -8,7 +8,7 @@ import string
 
 app = Flask(__name__)
 app.secret_key = 'your_secret_key'
-
+#testing
 # MySQL Config
 app.config['MYSQL_HOST'] = 'localhost'
 app.config['MYSQL_USER'] = 'root'
